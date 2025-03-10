@@ -1,0 +1,18 @@
+{
+  "uri": "/dars/getDocument",
+  "name": "dars-route-getDocument",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "556243652469326469",
+  "status": 1
+}

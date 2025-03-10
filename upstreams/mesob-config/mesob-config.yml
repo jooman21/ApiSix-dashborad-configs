@@ -1,0 +1,229 @@
+name: "mesob-adc-config"
+version: "1.0"
+
+routes:
+  - desc: "requeset tin"
+    id: "556163012495409797"
+    labels:
+      API_VERSION: v2
+    methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - PATCH
+      - HEAD
+      - OPTIONS
+      - CONNECT
+      - TRACE
+      - PURGE
+    name: "Request-Tin"
+    plugins:
+      proxy-rewrite:
+        uri: /mor/requestTin
+    service_id: "556162894501249669"
+    uri: /requestTin
+
+  - id: "556234210185052805"
+    methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - PATCH
+      - HEAD
+      - OPTIONS
+      - CONNECT
+      - TRACE
+      - PURGE
+    name: "etrade-route"
+    service_id: "556234060129632901"
+    uri: /etrade/business
+
+  - id: "556237848039129733"
+    methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - PATCH
+      - HEAD
+      - OPTIONS
+      - CONNECT
+      - TRACE
+      - PURGE
+    name: "nid-route-requestData"
+    service_id: "556238906043925125"
+    uri: /nid/requestData
+
+  - id: "556239198537908869"
+    methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - PATCH
+      - HEAD
+      - OPTIONS
+      - CONNECT
+      - TRACE
+      - PURGE
+    name: "nid-route-getData"
+    service_id: "556237624835048069"
+    uri: /nid/getData
+
+  - id: "556243450907853445"
+    methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - PATCH
+      - HEAD
+      - OPTIONS
+      - CONNECT
+      - TRACE
+      - PURGE
+    name: "dars-route-getDocument"
+    service_id: "556243652469326469"
+    uri: /dars/getDocument
+
+  - id: "556252000000000002"
+    methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - PATCH
+      - HEAD
+      - OPTIONS
+      - CONNECT
+      - TRACE
+      - PURGE
+    name: "motri-route-getCommercialRegistration"
+    service_id: "556252000000000001"
+    uri: /motri-api
+    prefix: true
+    strip_uri: false
+
+services:
+  - id: "556162894501249669"
+    name: "mor-service"
+    upstream:
+      name: "auto-mor-upstream"
+      type: "roundrobin"
+      scheme: "http"
+      nodes:
+        "erca.gov.et:8002": 1
+
+  - id: "556234060129632901"
+    name: "etrade-service"
+    plugins:
+      proxy-rewrite:
+        _meta:
+          disable: false
+        host: "etrade.gov.et"
+        regex_uri:
+          - ".*"
+          - "/api/BusinessMain/GetBusinessByLicenseNo"
+    upstream:
+      name: "auto-etrade-upstream"
+      type: "roundrobin"
+      scheme: "https"
+      nodes:
+        "etrade.gov.et:443": 1
+
+  - id: "556237624835048069"
+    name: "nid-service-getData"
+    plugins:
+      proxy-rewrite:
+        _meta:
+          disable: false
+        host: "auth-api.fayda.et"
+        regex_uri:
+          - ".*"
+          - "/getDataAuth"
+    upstream:
+      name: "auto-nid-upstream"
+      type: "roundrobin"
+      scheme: "https"
+      nodes:
+        "auth-api.fayda.et:443": 1
+
+  - id: "556238906043925125"
+    name: "nid-service-requestData"
+    plugins:
+      proxy-rewrite:
+        _meta:
+          disable: false
+        host: "auth-api.fayda.et"
+        regex_uri:
+          - ".*"
+          - "/requestData"
+    upstream:
+      name: "auto-nid-upstream"
+      type: "roundrobin"
+      scheme: "https"
+      nodes:
+        "auth-api.fayda.et:443": 1
+
+  - id: "556243193209815685"
+    name: "dars-service-auth"
+    plugins:
+      proxy-rewrite:
+        _meta:
+          disable: false
+        host: "10.1.7.17"
+        regex_uri:
+          - ".*"
+          - "/DarsOneStopAPI/connect/token"
+    upstream:
+      name: "auto-dars-upstream"
+      type: "roundrobin"
+      scheme: "http"
+      nodes:
+        "10.1.7.17:80": 1
+
+  - id: "556243652469326469"
+    name: "dars-service-getDocument"
+    plugins:
+      proxy-rewrite:
+        _meta:
+          disable: false
+        host: "10.1.7.17"
+        regex_uri:
+          - ".*"
+          - "/DarsOneStopAPI/api/DocumentAttachement"
+    upstream:
+      name: "auto-dars-upstream"
+      type: "roundrobin"
+      scheme: "http"
+      nodes:
+        "10.1.7.17:80": 1
+
+  - id: "556252000000000001"
+    name: "motri-service-getCommercialRegistration"
+    plugins:
+      proxy-rewrite:
+        _meta:
+          disable: false
+        host: "etrade.gov.et"
+        regex_uri:
+          - "^/motri-api/(.*)/(.*)$"
+          - "/api/Registration/GetRegistrationInfoByTin/$1/$2"
+    upstream:
+      name: "auto-motri-upstream"
+      type: "roundrobin"
+      scheme: "https"
+      pass_host: "pass"
+      timeout:
+        connect: 6
+        send: 6
+        read: 6
+      keepalive_pool:
+        idle_timeout: 60
+        requests: 1000
+        size: 320
+      nodes:
+        "etrade.gov.et:443": 1
+#END

@@ -1,0 +1,16 @@
+{
+  "name": "nid-service-getData",
+  "upstream_id": "556237254880658053",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "auth-api.fayda.et",
+      "regex_uri": [
+        ".*",
+        "/getDataAuth"
+      ]
+    }
+  }
+}

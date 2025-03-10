@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    {
+      "host": "10.1.7.17",
+      "port": 80,
+      "weight": 1
+    }
+  ],
+  "timeout": {
+    "connect": 15,
+    "send": 15,
+    "read": 15
+  },
+  "type": "roundrobin",
+  "scheme": "http",
+  "pass_host": "rewrite",
+  "upstream_host": "10.1.7.17",
+  "name": "dars-upstream",
+  "tls": {}
+}

@@ -1,0 +1,18 @@
+{
+  "uri": "/nid/getData",
+  "name": "nid-route-getData",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "556237624835048069",
+  "status": 1
+}

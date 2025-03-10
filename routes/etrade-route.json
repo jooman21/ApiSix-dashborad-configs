@@ -1,0 +1,18 @@
+{
+  "uri": "/etrade/business",
+  "name": "etrade-route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "556234060129632901",
+  "status": 1
+}

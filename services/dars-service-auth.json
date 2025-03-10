@@ -1,0 +1,16 @@
+{
+  "name": "dars-service-auth",
+  "upstream_id": "556242958161019525",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "10.1.7.17",
+      "regex_uri": [
+        ".*",
+        "/DarsOneStopAPI/connect/token"
+      ]
+    }
+  }
+}

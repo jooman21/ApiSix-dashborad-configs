@@ -1,0 +1,18 @@
+{
+  "uri": "/dars/auth",
+  "name": "dars-route-auth",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "556243193209815685",
+  "status": 1
+}

@@ -1,0 +1,16 @@
+{
+  "name": "etrade-service",
+  "upstream_id": "556234018287256197",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "etrade.gov.et",
+      "regex_uri": [
+        ".*",
+        "/api/BusinessMain/GetBusinessByLicenseNo"
+      ]
+    }
+  }
+}

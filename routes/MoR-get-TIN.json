@@ -1,0 +1,18 @@
+{
+  "uri": "/mor/getTIN",
+  "name": "MoR-get-TIN",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "556419163673854609",
+  "status": 1
+}

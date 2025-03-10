@@ -1,0 +1,18 @@
+{
+  "uri": "/mor/tax_clearance",
+  "name": "mor-tax-clearance-route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "556685607523320436",
+  "status": 1
+}

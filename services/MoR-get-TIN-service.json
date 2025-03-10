@@ -1,0 +1,16 @@
+{
+  "name": "MoR-get-TIN-service",
+  "upstream_id": "556418836568474257",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "mor.gov.et",
+      "regex_uri": [
+        ".*",
+        "/api/moross"
+      ]
+    }
+  }
+}

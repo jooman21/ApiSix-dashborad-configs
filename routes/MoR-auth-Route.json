@@ -1,0 +1,18 @@
+{
+  "uri": "/mor/auth",
+  "name": "MoR-auth-Route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "556418992596583057",
+  "status": 1
+}
