@@ -9,7 +9,7 @@
       "host": "mor.gov.et",
       "regex_uri": [
         ".*",
-        "/api/tax_clearance"
+        "/api/moross"
       ]
     }
   }
