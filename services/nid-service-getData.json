@@ -9,7 +9,7 @@
       "host": "auth-api.fayda.et",
       "regex_uri": [
         ".*",
-        "/getDataAuth"
+        "/getDataKyc"
       ]
     }
   }
