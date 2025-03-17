@@ -1,0 +1,16 @@
+{
+  "name": "EAES-Service-offical-document",
+  "upstream_id": "558181871268135722",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "services.eaes.et",
+      "regex_uri": [
+        ".*",
+        "/api/official/document"
+      ]
+    }
+  }
+}

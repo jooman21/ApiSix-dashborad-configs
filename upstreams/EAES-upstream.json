@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "host": "192.168.27.1",
+      "host": "services.eaes.et",
       "port": 443,
       "weight": 1
     }
@@ -12,9 +12,9 @@
     "read": 6
   },
   "type": "roundrobin",
-  "scheme": "https",
+  "scheme": "http",
   "pass_host": "pass",
-  "name": "nid-upstream",
+  "name": "EAES-upstream",
   "keepalive_pool": {
     "idle_timeout": 60,
     "requests": 1000,

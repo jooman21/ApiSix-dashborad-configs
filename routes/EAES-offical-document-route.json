@@ -1,0 +1,18 @@
+{
+  "uri": "/eaes/getDocument",
+  "name": "EAES-offical-document-route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "558182401679819562",
+  "status": 1
+}
