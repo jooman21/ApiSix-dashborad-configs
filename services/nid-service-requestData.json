@@ -6,7 +6,7 @@
       "_meta": {
         "disable": false
       },
-      "host": "auth-api.fayda.et",
+      "host": "192.168.27.1",
       "regex_uri": [
         ".*",
         "/requestData"
