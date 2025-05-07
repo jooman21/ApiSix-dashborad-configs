@@ -1,0 +1,18 @@
+{
+    "uri": "/dars/getPowerOfAttorny",
+    "name": "dars-power-of-attorny-route",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "HEAD",
+      "OPTIONS",
+      "CONNECT",
+      "TRACE",
+      "PURGE"
+    ],
+    "service_id": "565529187281011282",
+    "status": 1
+  }

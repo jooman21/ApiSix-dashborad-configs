@@ -1,0 +1,16 @@
+{
+    "name": "Dars-MemorandumofAssociation-service",
+    "upstream_id": "561811466760487506",
+    "plugins": {
+      "proxy-rewrite": {
+        "_meta": {
+          "disable": false
+        },
+        "host": "10.1.7.17",
+        "regex_uri": [
+          ".*",
+          "/DarsOneStopAPI/api/MemorandumofAssociation"
+        ]
+      }
+    }
+  }

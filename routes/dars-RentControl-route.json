@@ -1,0 +1,19 @@
+{
+    "uri": "/dars/getRentControl",
+    "name": "dars-RentControl-route",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "HEAD",
+      "OPTIONS",
+      "CONNECT",
+      "TRACE",
+      "PURGE"
+    ],
+    "service_id": "565550129491214930",
+    "upstream_id": "561811466760487506",
+    "status": 1
+  }
