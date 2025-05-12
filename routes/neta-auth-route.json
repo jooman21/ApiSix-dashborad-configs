@@ -1,0 +1,18 @@
+{
+    "uri": "/neta/auth",
+    "name": "neta-auth-route",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "HEAD",
+      "OPTIONS",
+      "CONNECT",
+      "TRACE",
+      "PURGE"
+    ],
+    "service_id": "566268103638385234",
+    "status": 1
+  }

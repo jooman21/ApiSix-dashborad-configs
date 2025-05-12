@@ -1,0 +1,16 @@
+{
+    "name": "neta-get-authenticated-document",
+    "upstream_id": "566267912596226642",
+    "plugins": {
+      "proxy-rewrite": {
+        "_meta": {
+          "disable": false
+        },
+        "host": "neta.gov.et",
+        "regex_uri": [
+          ".*",
+          "/api/get/dbe31b8304a5758a677f6a2005cec8e1"
+        ]
+      }
+    }
+  }

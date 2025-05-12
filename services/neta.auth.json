@@ -1,0 +1,16 @@
+{
+    "name": "neta-auth",
+    "upstream_id": "566267912596226642",
+    "plugins": {
+      "proxy-rewrite": {
+        "_meta": {
+          "disable": false
+        },
+        "host": "neta.gov.et",
+        "regex_uri": [
+          ".*",
+          "/api/auth/login"
+        ]
+      }
+    }
+  }

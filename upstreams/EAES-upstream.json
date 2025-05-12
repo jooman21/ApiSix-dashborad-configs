@@ -1,18 +1,18 @@
 {
   "nodes": [
     {
-      "host": "services.eaes.et",
+      "host": "192.168.250.194",
       "port": 443,
       "weight": 1
     }
   ],
   "timeout": {
-    "connect": 6,
-    "send": 6,
-    "read": 6
+    "connect": 30,
+    "send": 30,
+    "read": 30
   },
   "type": "roundrobin",
-  "scheme": "http",
+  "scheme": "https",
   "pass_host": "pass",
   "name": "EAES-upstream",
   "keepalive_pool": {
