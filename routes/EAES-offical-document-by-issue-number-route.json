@@ -1,0 +1,18 @@
+{
+    "uri": "/eaes/getDocument/ByIssueNumber",
+    "name": "EAES-offical-document-by-issue-number-route",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "HEAD",
+      "OPTIONS",
+      "CONNECT",
+      "TRACE",
+      "PURGE"
+    ],
+    "service_id": "566271600647733842",
+    "status": 1
+  }

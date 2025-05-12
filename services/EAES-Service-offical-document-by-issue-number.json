@@ -1,0 +1,16 @@
+{
+    "name": "EAES-Service-offical-document-by-issue-number",
+    "upstream_id": "561812145247879762",
+    "plugins": {
+      "proxy-rewrite": {
+        "_meta": {
+          "disable": false
+        },
+        "host": "192.168.250.194",
+        "regex_uri": [
+          ".*",
+          "/api/official/ByIssueNumber"
+        ]
+      }
+    }
+  }

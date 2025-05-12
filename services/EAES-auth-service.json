@@ -6,7 +6,7 @@
       "_meta": {
         "disable": false
       },
-      "host": "services.eaes.et",
+      "host": "192.168.250.194",
       "regex_uri": [
         ".*",
         "/api/Auth/Login"
