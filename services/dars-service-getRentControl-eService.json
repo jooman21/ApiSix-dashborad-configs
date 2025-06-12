@@ -1,0 +1,20 @@
+{
+    "name": "dars-service-getRentControl-eService",
+    "upstream_id": "561811466760487506",
+    "plugins": {
+      "proxy-rewrite": {
+        "_meta": {
+          "disable": false
+        },
+        "headers": {
+          "Authorization": "$http_authorization",
+          "X-API-KEY": "$http_x_api_key"
+        },
+        "host": "10.1.7.24",
+        "regex_uri": [
+          ".*",
+          "/DarsMosebAPI/api/RentControl"
+        ]
+      }
+    }
+  }

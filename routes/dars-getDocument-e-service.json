@@ -1,0 +1,18 @@
+{
+    "uri": "/dars/eService/getDocument",
+    "name": "dars-getDocument-e-service",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "HEAD",
+      "OPTIONS",
+      "CONNECT",
+      "TRACE",
+      "PURGE"
+    ],
+    "service_id": "570739058007868044",
+    "status": 1
+  }

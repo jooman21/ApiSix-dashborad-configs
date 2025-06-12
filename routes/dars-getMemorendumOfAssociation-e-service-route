@@ -1,0 +1,18 @@
+{
+  "uri": "/dars/eService/getMemorandumofAssociation",
+  "name": "dars-getMemorendumOfAssociation-e-service-route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "570744742430638732",
+  "status": 1
+}

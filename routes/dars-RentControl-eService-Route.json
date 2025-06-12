@@ -1,0 +1,18 @@
+{
+    "uri": "/dars/eService/getRentControl",
+    "name": "dars-RentControl-eService-Route",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "HEAD",
+      "OPTIONS",
+      "CONNECT",
+      "TRACE",
+      "PURGE"
+    ],
+    "service_id": "570747550366171788",
+    "status": 1
+  }
