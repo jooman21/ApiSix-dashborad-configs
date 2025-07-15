@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "host": "www.new.bo.business.gov.et",
+      "weight": 1
+    }
+  ],
+  "timeout": {
+    "connect": 6,
+    "send": 6,
+    "read": 6
+  },
+  "type": "roundrobin",
+  "scheme": "https",
+  "pass_host": "pass",
+  "name": "building permit ",
+  "keepalive_pool": {
+    "idle_timeout": 60,
+    "requests": 1000,
+    "size": 320
+  }
+}

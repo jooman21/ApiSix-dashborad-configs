@@ -1,0 +1,18 @@
+{
+  "uri": "/constructionPermit/getCertficate",
+  "name": "construction-permit-certitifcate-route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "575518620105310860",
+  "status": 1
+}

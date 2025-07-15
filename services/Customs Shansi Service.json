@@ -1,0 +1,16 @@
+{
+  "name": "Customs Shansi Service",
+  "upstream_id": "574370947398632076",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "10.1.60.107",
+      "regex_uri": [
+        "/customs/getShanshi/(.*)",
+        "/carrier/vin/$1"
+      ]
+    }
+  }
+}

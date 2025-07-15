@@ -1,0 +1,16 @@
+{
+  "name": "construction-permit-get-bill-of-quantity",
+  "upstream_id": "575516207742976652",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "www.new.bo.business.gov.et",
+      "regex_uri": [
+        ".*",
+        "/api/method/stars_et.stars_et.doctype.evaluation_submission.evaluation_submission.get_boq_data$1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "uri": "/customs/getShanshi/*",
+  "name": "Customs Shanshi Route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "574371006571872908",
+  "status": 1
+}
