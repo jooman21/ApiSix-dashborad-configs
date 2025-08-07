@@ -1,0 +1,18 @@
+{
+  "uri": "/mor/getWorkersPension",
+  "name": "mor worker payroll pesnion route",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "578861891099558540",
+  "status": 1
+}

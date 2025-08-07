@@ -1,0 +1,16 @@
+{
+  "name": "MoR-workers-payroll-pension",
+  "upstream_id": "561812030508499538",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "www.mor.gov.et",
+      "regex_uri": [
+        "^/mor/getWorkersPension(.*)",
+        "/api/private_pension$1"
+      ]
+    }
+  }
+}
