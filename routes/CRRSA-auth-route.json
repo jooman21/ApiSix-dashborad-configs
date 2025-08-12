@@ -1,0 +1,19 @@
+{
+  "uri": "CRRSA/getByRegistrationId",
+  "name": "CRRSA-get-by-registration-id",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "579616495194079904",
+  "upstream_id": "579593946330563232",
+  "status": 1
+}

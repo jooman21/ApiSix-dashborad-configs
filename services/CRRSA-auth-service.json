@@ -1,0 +1,16 @@
+{
+  "name": "CRRSA auth service",
+  "upstream_id": "579593946330563232",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "10.18.7.90",
+      "regex_uri": [
+        "^/CRRSA/auth$",
+        "/TVTTDBAPI/token"
+      ]
+    }
+  }
+}
