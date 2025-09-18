@@ -1,0 +1,9 @@
+{
+  "uri": "/Ashtesh/getDriverList/*",
+  "name": "National Driver Route get Driverlist",
+  "methods": [
+    "GET"
+  ],
+  "service_id": "584820209370530465",
+  "status": 1
+}

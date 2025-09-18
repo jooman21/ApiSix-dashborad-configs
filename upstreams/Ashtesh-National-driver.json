@@ -1,8 +1,8 @@
 {
   "nodes": [
     {
-      "host": "www.mor.gov.et",
-      "port": 2032,
+      "host": "10.33.35.12",
+      "port": 5533,
       "weight": 1
     }
   ],
@@ -14,7 +14,7 @@
   "type": "roundrobin",
   "scheme": "http",
   "pass_host": "pass",
-  "name": "MOR-upstream",
+  "name": "National Driver Upstream",
   "keepalive_pool": {
     "idle_timeout": 60,
     "requests": 1000,

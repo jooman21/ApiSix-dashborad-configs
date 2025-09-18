@@ -1,0 +1,16 @@
+{
+  "name": "national-driver-service-by-license",
+  "upstream_id": "583523298495693473",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "host": "10.33.35.12:5533",
+      "regex_uri": [
+        "^/Ashtesh/getDriverInfo/(.*)/(.*)/(.*)$",
+        "/NationalDriversAPI/Api/Driver/$1/$2/$3"
+      ]
+    }
+  }
+}

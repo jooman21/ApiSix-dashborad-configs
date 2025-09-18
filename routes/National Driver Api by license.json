@@ -1,0 +1,18 @@
+{
+  "uri": "Ashtesh/getNationalDriver",
+  "name": "National Driver Api by license",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "583525531241153185",
+  "status": 1
+}
