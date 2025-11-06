@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "host": "etrade.gov.et",
+      "host": "app.etrade.gov.et",
       "port": 443,
       "weight": 1
     }

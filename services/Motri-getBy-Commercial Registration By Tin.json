@@ -11,7 +11,7 @@
         "LicenseNo": "$arg_LicenseNo",
         "Tin": "$arg_Tin"
       },
-      "host": "etrade.gov.et",
+      "host": "app.etrade.gov.et",
       "uri": "/api/BusinessMain/GetBusinessByLicenseNo"
     }
   }
