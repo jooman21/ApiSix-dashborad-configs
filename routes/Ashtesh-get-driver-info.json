@@ -1,0 +1,18 @@
+{
+  "uri": "/asteshGetVechicleInfo",
+  "name": "Ashtesh-get-driver-info",
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "HEAD",
+    "OPTIONS",
+    "CONNECT",
+    "TRACE",
+    "PURGE"
+  ],
+  "service_id": "592191520442942113",
+  "status": 1
+}

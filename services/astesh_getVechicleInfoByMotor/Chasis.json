@@ -1,0 +1,20 @@
+{
+  "name": "astesh-get-vechicle",
+  "upstream_id": "592191007462785697",
+  "plugins": {
+    "proxy-rewrite": {
+      "_meta": {
+        "disable": false
+      },
+      "args": {
+        "ChasisNumber": "$arg_ChasisNumber",
+        "MotorNumber": "$arg_MotorNumber"
+      },
+      "host": "10.18.7.142",
+      "regex_uri": [
+        ".*",
+        "/api/Vehicles/vehicleInformation/addisAbaba"
+      ]
+    }
+  }
+}
